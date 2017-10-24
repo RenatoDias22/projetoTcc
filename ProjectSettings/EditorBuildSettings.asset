@@ -4,4 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Scenes/TelaPrincipal.unity
+    guid: 849f47668ef75c345b5c8662d0737c5c
+  - enabled: 1
+    path: Assets/_Scenes/Memoria.unity
+    guid: b83b03d69006645d68bccc47fa43e387
+  - enabled: 1
+    path: Assets/_Scenes/Atencao.unity
+    guid: 91307bf104573446ab7285cd938b301c
+  - enabled: 1
+    path: Assets/_Scenes/Aprendizagem.unity
+    guid: 5fac8ce40abab4a7795a735e57cf0123
