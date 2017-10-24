@@ -55,6 +55,8 @@ public class TelaAprendizagem : MonoBehaviour {
 		
 		Invoke("FinalPartida", 29.0f);
 		this.timerSeconds = 29;
+		this.pontosAcerto = 0;
+		this.pontosErros= 0;
 		jogos.Add (new JogoAprendiazgem ("2+3=", "5", "1", "3", "5", "2"));
 		jogos.Add (new JogoAprendiazgem("2-3=", "-1", "-1", "2", "0", "1"));
 		jogos.Add (new JogoAprendiazgem("(2-3)+2=", "1", "-1", "2", "0", "1"));

@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\Lobby\LobbyTableViewController.cs" />
      <Compile Include="Assets\Scripts\Lobby\ScrollingEventsHandler.cs" />
      <Compile Include="Assets\TelaAprendizagem.cs" />
+     <Compile Include="Assets\TelaAtencao.cs" />
      <Compile Include="Assets\TelaPrincipal.cs" />
      <Compile Include="Assets\TSTableView\ITableViewDataSource.cs" />
      <Compile Include="Assets\TSTableView\TableView.cs" />
