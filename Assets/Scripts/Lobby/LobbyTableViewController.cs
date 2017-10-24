@@ -285,7 +285,7 @@ public class LobbyTableViewController : MonoBehaviour, ITableViewDataSource {
 
 	public void ButtonSairClick(GameObject sender) {
 
-		string underManager = PlayerPrefs.GetString ("underManager");
+//		string underManager = PlayerPrefs.GetString ("underManager");
 //		if ( underManager == "true") {
 //			panelAlertGanhos.SetActive (true);
 //			panelGanhos.SetActive (true);

@@ -138,10 +138,10 @@ RectTransform:
   m_Father: {fileID: 1574966182}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 18, y: 0.0000076294}
-  m_SizeDelta: {x: 662.3, y: 213}
+  m_AnchorMin: {x: 0.35867113, y: 0.712}
+  m_AnchorMax: {x: 0.638, y: 0.885168}
+  m_AnchoredPosition: {x: 2.499977, y: -2}
+  m_SizeDelta: {x: 5.799988, y: 1.199997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &166224748
 MonoBehaviour:
@@ -164,7 +164,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 100
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Aprendizagem
+  m_Text: (20-10)+50=
 --- !u!222 &166224749
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -359,14 +359,11 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 520228751}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b2af60d39e6d4cb2938b83877a76c77, type: 3}
+  m_Script: {fileID: 11500000, guid: 7385bcb5ee66940099eb9ae34d6d9c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  memoria: {fileID: 0}
-  aprendizagem: {fileID: 0}
-  atencao: {fileID: 0}
 --- !u!114 &520228753
 MonoBehaviour:
   m_ObjectHideFlags: 0
