@@ -32,6 +32,7 @@ public class TelaMemoria : MonoBehaviour {
 
 	public Text time;
 	public int timerSeconds = 29;
+	public int cont = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -41,6 +42,7 @@ public class TelaMemoria : MonoBehaviour {
 		this.pontosErros= 0;
 		setNewButtons ();
 		InvokeRepeating ("CountDown", 0f, 1.0f);
+		InvokeRepeating ("setButton", 0f, 0.3f);
 	}
 	
 	// Update is called once per frame
@@ -60,7 +62,8 @@ public class TelaMemoria : MonoBehaviour {
 						resposta++;
 						this.pontosAcerto++;
 					} else {
-						resposta = 1;
+						this.resposta = 1;
+						this.cont = 0;
 						this.pontosErros++;
 					}
 				}
@@ -137,4 +140,25 @@ public class TelaMemoria : MonoBehaviour {
 
 	}
 
+	public void setButtonVisible(Button but) {
+		but.enabled = true;
+		but.GetComponentInChildren<CanvasRenderer>().SetAlpha(1);
+	}
+
+	public void setButton(){
+		if (cont < 3) {
+			if(cont == 0){
+				setButtonVisible (Button1);
+				cont++;
+			}
+			if(cont == 1){
+				setButtonVisible (Button2);
+				cont++;
+			}
+			if(cont == 2){
+				setButtonVisible (Button3);
+				cont++;
+			}
+		}
+	}
 }
