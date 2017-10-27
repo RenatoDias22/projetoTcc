@@ -39,6 +39,7 @@ public class TelaMemoria : MonoBehaviour {
 		Invoke("FinalPartida", 29.0f);
 		this.pontosAcerto = 0;
 		this.pontosErros= 0;
+		setNewButtons ();
 		InvokeRepeating ("CountDown", 0f, 1.0f);
 	}
 	
@@ -52,27 +53,20 @@ public class TelaMemoria : MonoBehaviour {
 			if (resposta == 1) {
 				resposta++;
 			} else {
-				if (respota == 2) {
+				if (resposta == 2) {
 					resposta++;
 				} else {
 					if (resposta == 3) {
 						resposta++;
 						this.pontosAcerto++;
 					} else {
-						resposta == 1;
+						resposta = 1;
 						this.pontosErros++;
 					}
 				}
 			}
 		}
-//
-//		if (sender.name == "ButtonColor2") {
-//			if (resposta == btnColor2.GetComponentInChildren<Text> ().text) {
-//				this.pontosAcerto++;
-//			} else {
-//				this.pontosErros++;
-//			}
-//		}
+
 //		UpdatePerguntas ();
 	}
 
@@ -106,6 +100,41 @@ public class TelaMemoria : MonoBehaviour {
 		if(timerSeconds < 1) {
 			CancelInvoke("CountDown");
 		}
+	}
+
+	public void setNewButtons(){
+
+		this.Button1.enabled = false;
+		this.Button1.GetComponentInChildren<CanvasRenderer>().SetAlpha(0);
+		this.Button2.enabled = false;
+		this.Button2.GetComponentInChildren<CanvasRenderer>().SetAlpha(0);
+		this.Button3.enabled = false;
+		this.Button3.GetComponentInChildren<CanvasRenderer>().SetAlpha(0);
+		this.Button4.enabled = false;
+		this.Button4.GetComponentInChildren<CanvasRenderer>().SetAlpha(0);
+		this.Button5.enabled = false;
+		this.Button5.GetComponentInChildren<CanvasRenderer>().SetAlpha(0);
+		this.Button6.enabled = false;
+		this.Button6.GetComponentInChildren<CanvasRenderer>().SetAlpha(0);
+		this.Button7.enabled = false;
+		this.Button7.GetComponentInChildren<CanvasRenderer>().SetAlpha(0);
+		this.Button8.enabled = false;
+		this.Button8.GetComponentInChildren<CanvasRenderer>().SetAlpha(0);
+		this.Button9.enabled = false;
+		this.Button9.GetComponentInChildren<CanvasRenderer>().SetAlpha(0);
+		this.Button10.enabled = false;
+		this.Button10.GetComponentInChildren<CanvasRenderer>().SetAlpha(0);
+		this.Button11.enabled = false;
+		this.Button11.GetComponentInChildren<CanvasRenderer>().SetAlpha(0);
+		this.Button12.enabled = false;
+		this.Button12.GetComponentInChildren<CanvasRenderer>().SetAlpha(0);
+		this.Button13.enabled = false;
+		this.Button13.GetComponentInChildren<CanvasRenderer>().SetAlpha(0);
+		this.Button14.enabled = false;
+		this.Button14.GetComponentInChildren<CanvasRenderer>().SetAlpha(0);
+		this.Button15.enabled = false;
+		this.Button15.GetComponentInChildren<CanvasRenderer>().SetAlpha(0);
+
 	}
 
 }
