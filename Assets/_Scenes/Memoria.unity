@@ -1024,6 +1024,7 @@ MonoBehaviour:
   Button15: {fileID: 1190674656}
   time: {fileID: 1998671460}
   timerSeconds: 29
+  cont: 0
 --- !u!114 &264366765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1938,47 +1939,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 865592089}
---- !u!1 &914589395
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 914589397}
-  - component: {fileID: 914589396}
-  m_Layer: 0
-  m_Name: ButtonEventsHandler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &914589396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 914589395}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38aa34952e07f2e4da54983e9c253aa2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_tableView: {fileID: 0}
---- !u!4 &914589397
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 914589395}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 717.6, y: 367.81503, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &975037340
 GameObject:
   m_ObjectHideFlags: 0
