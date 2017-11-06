@@ -46,12 +46,17 @@ public class TelaAtencao : MonoBehaviour {
 		this.pontosAcerto = 0;
 		this.pontosErros= 0;
 		jogos.Add (new JogoAtencao ("Amarelo", "Azul", Color.yellow, Color.green, "Azul"));
-		jogos.Add (new JogoAtencao("Vermelho", "Amarelo",Color.red, Color.black, "Amarelo"));
+		jogos.Add (new JogoAtencao("Vermelho", "Amarelo",Color.blue, Color.yellow, "Vermelho"));
 		jogos.Add (new JogoAtencao("Branco", "Preto",Color.blue, Color.black, "Branco"));
-		jogos.Add (new JogoAtencao("Verde", "Azul", Color.green, Color.white, "Azul"));
+		jogos.Add (new JogoAtencao("Verde", "Azul", Color.white, Color.blue, "Verde"));
 		jogos.Add (new JogoAtencao ("Azul", "Branco", Color.blue, Color.yellow, "Branco"));
 		jogos.Add (new JogoAtencao ("Preto", "Azul", Color.yellow, Color.blue, "Preto"));
 		jogos.Add (new JogoAtencao ("Branco", "Verde", Color.white, Color.green, "Verde"));
+		jogos.Add (new JogoAtencao ("Preto", "Cinza", Color.black, Color.green, "Cinza"));
+		jogos.Add (new JogoAtencao ("Cinza", "Vermelho", Color.gray, Color.white, "Vermelho"));
+		jogos.Add (new JogoAtencao ("Verde", "Vermelho", Color.green, Color.blue, "Vermelho"));
+		jogos.Add (new JogoAtencao ("Cinza", "Verde", Color.yellow, Color.green, "Cinza"));
+
 		this.time.text = "" + timerSeconds;
 		UpdatePerguntas();
 		InvokeRepeating ("CountDown", 0f, 1.0f);
