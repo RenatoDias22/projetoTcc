@@ -73,6 +73,10 @@ public class TelaMemoria : MonoBehaviour {
 		jogos.Add (new JogoMemoria (this.Button15, this.Button12, this.Button5, 1, "Button15","Button12","Button5"));
 		jogos.Add (new JogoMemoria (this.Button2, this.Button9, this.Button4, 1, "Button2","Button9","Button4"));
 		jogos.Add (new JogoMemoria (this.Button7, this.Button9, this.Button3, 1, "Button7","Button9","Button3"));
+		jogos.Add (new JogoMemoria (this.Button6, this.Button4, this.Button1, 1, "Button6","Button4","Button1"));
+		jogos.Add (new JogoMemoria (this.Button11, this.Button8, this.Button4, 1, "Button11","Button8","Button4"));
+		jogos.Add (new JogoMemoria (this.Button13, this.Button4, this.Button5, 1, "Button13","Button4","Button5"));
+
 		Invoke("FinalPartida", 29.0f);
 		UpdatePerguntas();
 		this.pontosAcerto = 0;
