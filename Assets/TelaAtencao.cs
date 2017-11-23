@@ -30,6 +30,7 @@ public class TelaAtencao : MonoBehaviour {
 
 	public Text pontuacaoAcerto;
 	public Text pontuacaoErro;
+	public Text pontuacaoTotal;
 	public GameObject panelGame;
 	public GameObject panelPontuacao;
 
@@ -119,8 +120,20 @@ public class TelaAtencao : MonoBehaviour {
 	}
 
 	public void FinalPartida(){
+
+		int pontosAcertosTotal = pontosAcerto * 100;
+		int pontosErrosTotal = pontosErros * (-50);
+		int total = pontosAcertosTotal + pontosErrosTotal;
+
+		PlayerPrefs.SetString ("ArrayAtencaoAcertos", PlayerPrefs.GetString("ArrayAtencaoAcertos") + " " + pontosAcerto.ToString());
 		this.pontuacaoAcerto.text = pontosAcerto.ToString();
+		
+		PlayerPrefs.SetString ("ArrayAtencaoErros", PlayerPrefs.GetString("ArrayAtencaoErros") + " " + pontosErros.ToString());
 		this.pontuacaoErro.text = pontosErros.ToString();
+
+		PlayerPrefs.SetString ("ArrayAtencaoPontosTotal", PlayerPrefs.GetString("ArrayAtencaoPontosTotal") + " " + total.ToString());
+		this.pontuacaoTotal.text = total.ToString();
+
 		this.panelPontuacao.SetActive(true);
 		this.panelGame.SetActive (false);
 	}

@@ -42,6 +42,7 @@ public class TelaAprendizagem : MonoBehaviour {
 
 	public Text pontuacaoAcerto;
 	public Text pontuacaoErro;
+	public Text pontuacaoTotal;
 	public GameObject panelGame;
 	public GameObject panelPontuacao;
 
@@ -144,8 +145,19 @@ public class TelaAprendizagem : MonoBehaviour {
 	}
 
 	public void FinalPartida(){
+		int pontosAcertosTotal = pontosAcerto * 100;
+		int pontosErrosTotal = pontosErros * (-50);
+		int total = pontosAcertosTotal + pontosErrosTotal;
+
+		PlayerPrefs.SetString ("ArrayAprendizagemAcertos", PlayerPrefs.GetString("ArrayAprendizagemAcertos") + " " + pontosAcerto.ToString());
 		this.pontuacaoAcerto.text = pontosAcerto.ToString();
+		
+		PlayerPrefs.SetString ("ArrayAprendizagemErros", PlayerPrefs.GetString("ArrayAprendizagemErros") + " " + pontosErros.ToString());
 		this.pontuacaoErro.text = pontosErros.ToString();
+
+		PlayerPrefs.SetString ("ArrayAprendizagemPontosTotal", PlayerPrefs.GetString("ArrayAprendizagemPontosTotal") + " " + total.ToString());
+		this.pontuacaoTotal.text = total.ToString();
+
 		this.panelPontuacao.SetActive(true);
 		this.panelGame.SetActive (false);
 	}

@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 43
+  controlID: 45
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 44
+  controlID: 46
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 404, y: 221}
   m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 45
+  controlID: 47
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -201,8 +201,8 @@ MonoBehaviour:
     y: 0
     width: 770
     height: 425
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -289,14 +289,14 @@ MonoBehaviour:
     width: 766
     height: 404
   m_SceneLighting: 1
-  lastFramingTime: 383.9428820014
+  lastFramingTime: 4318.120109975338
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 624.0867, y: 450.0241, z: 0}
+    m_Target: {x: 708.90356, y: 310.21985, z: 0}
     speed: 2
-    m_Value: {x: 624.0867, y: 450.0241, z: 0}
+    m_Value: {x: 708.90356, y: 310.21985, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -323,9 +323,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1616.2601
+    m_Target: 1181.8066
     speed: 2
-    m_Value: 1616.2601
+    m_Value: 1181.8066
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -364,9 +364,9 @@ MonoBehaviour:
     height: 404
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 54a1f7ff08a2f7ff04a3f7ff08a3f7ff10a3f7ff16a3f7ff9cbef7ffaac5f7ff60c6f7ff60c7f7ff6ac7f7ff78c7f7ff80c7f7ffe6f9f7ff9cfaf7ff98fbf7ff9efbf7ffa8fbf7ffacfbf7ff3a1cf8fff01cf8fff01df8fffa1df8ff081ef8ff101ef8ff0077f8ffb477f8ffb478f8ffbe78f8ffcc78f8ffd478f8ff6c7af8ff5e7df8ffd07ff8ff8882f8ffa491f8ff5c92f8ff6493f8ff6e93f8ff7c93f8ff8493f8ffc4ddf8ff7cdef8ff84dff8ff8edff8ff9cdff8ffa4dff8ff86a4faff3ea5faff46a6faff50a6faff5ea6faff66a6faffa0f8fdff9cf8ffff1afcffff00000000689e0000d09e0000e29e00000e9f00001a9f0000
+    m_SelectedIDs: 58550000
+    m_LastClickedID: 21848
+    m_ExpandedIDs: e0e8f7ff36ebf7ff4c2df8ff4232f8ffb04df8ff5057f8ff546ef8ffee88f8ff6ca7f8ff52acf8ff2aaef8ffe048f9ff0463f9ff3c64f9ff4ab8f9ff30bff9ff5ec0f9ffdec5f9ffb2c6f9ffe8c8f9ffd63ffdffe43ffdfff03ffdfff63ffdff1841fdffcc45fdff1a10feff5212feff1018feff2029ffff2829ffffd67dffffe0f2ffff18fcffff1afcffff0000000092260000ae270000a82d0000202e000060370000923700009a370000303a0000623a0000a03a0000e83a00009e3f000084410000fc4100003c430000c2480000c24e0000f0500000385100004c5500007e55000086550000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -385,7 +385,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - Atencao
+  - TelaPrincipal
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -458,7 +458,7 @@ MonoBehaviour:
       width: 766
       height: 387
     m_MinimalGUI: 1
-  m_defaultScale: 2
+  m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 1532, y: 808}
@@ -487,10 +487,10 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 468
-    y: 181
-    width: 973
-    height: 501
+    x: 235
+    y: 94
+    width: 766
+    height: 404
 --- !u!114 &16
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -529,19 +529,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/_Scenes
+    - Assets/TSTableView/Examples/DynamicCellHeight
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 16
   m_LastFolders:
-  - Assets/_Scenes
-  m_LastFoldersGridSize: -1
+  - Assets/TSTableView/Examples/DynamicCellHeight
+  m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/renatodias/Development/tcc/projetoTCC
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 26260000
-    m_LastClickedID: 9766
-    m_ExpandedIDs: 182600001c26000000ca9a3bffffff7f
+    m_SelectedIDs: 22260000
+    m_LastClickedID: 9762
+    m_ExpandedIDs: 000000000826000024260000402600006e27000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -569,7 +569,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 000000000826000024260000402600006e270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -597,23 +597,23 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c62300001e250000
+    m_ExpandedInstanceIDs: c62300001e250000000000006c270000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: TelaPrincipal
+      m_OriginalName: TelaPrincipal
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 9758
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -622,7 +622,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 16
   m_DirectoriesAreaWidth: 115
 --- !u!114 &17
 MonoBehaviour:

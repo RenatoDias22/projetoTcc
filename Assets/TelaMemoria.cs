@@ -39,6 +39,7 @@ public class TelaMemoria : MonoBehaviour {
 
 	public Text pontuacaoAcerto;
 	public Text pontuacaoErro;
+	public Text pontuacaoTotal;
 	public GameObject panelGame;
 	public GameObject panelPontuacao;
 	public Button Button1;
@@ -166,8 +167,20 @@ public class TelaMemoria : MonoBehaviour {
 	}
 
 	public void FinalPartida(){
+
+		int pontosAcertosTotal = pontosAcerto * 100;
+		int pontosErrosTotal = pontosErros * (-50);
+		int total = pontosAcertosTotal + pontosErrosTotal;
+		
+		PlayerPrefs.SetString ("ArrayMemoriaAcertos", PlayerPrefs.GetString("ArrayMemoriaAcertos") + " " + pontosAcerto.ToString());
 		this.pontuacaoAcerto.text = pontosAcerto.ToString();
+		
+		PlayerPrefs.SetString ("ArrayMemoriaErros", PlayerPrefs.GetString("ArrayMemoriaErros") + " " + pontosErros.ToString());
 		this.pontuacaoErro.text = pontosErros.ToString();
+
+		PlayerPrefs.SetString ("ArrayMemoriaPontosTotal", PlayerPrefs.GetString("ArrayMemoriaPontosTotal") + " " + total.ToString());
+		this.pontuacaoTotal.text = total.ToString();
+		
 		this.panelPontuacao.SetActive(true);
 		this.panelGame.SetActive (false);
 	}

@@ -17,3 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Aprendizagem.unity
     guid: 5fac8ce40abab4a7795a735e57cf0123
+  - enabled: 1
+    path: Assets/_Scenes/Ranking.unity
+    guid: a767f2cb3f7754fd690136743cd6edbc
