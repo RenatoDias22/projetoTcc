@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System;
 using Tacticsoft;
 using UnityEngine.SceneManagement;
 
@@ -23,6 +24,24 @@ namespace Tacticsoft.Examples
         //Register as the TableView's delegate (required) and data source (optional)
         //to receive the calls
         void Start() {
+            string acertos = PlayerPrefs.GetString("ArrayMemoriaAcertos");
+            string[] acertosArray = acertos.Split(' ');
+            string erros = PlayerPrefs.GetString("ArrayMemoriaErros");
+            string[] errosArray = erros.Split(' ');
+            string total = PlayerPrefs.GetString("ArrayMemoriaPontosTotal");
+            string[] totalArray = total.Split(' ');
+            if(acertosArray.Length > 0){
+                memoriaArray = new List<Memoria>();
+                m_numRows = 0;
+                for (int i = 1; i < acertosArray.Length; i++){
+                    memoriaArray.Add(new Memoria(acertosArray[i],errosArray[i],totalArray[i]));
+                }
+                memoriaArray.Sort(delegate(Memoria x, Memoria y) {
+                        if (x.pontosTotal == null && y.pontosTotal == null  || x.pontosTotal == y.pontosTotal) return 0;
+                        else if(Int32.Parse(y.pontosTotal) < Int32.Parse(x.pontosTotal)) return -1;
+                        else return 1;
+                    });
+            }
             m_customRowHeights = new Dictionary<int, float>();
             m_tableView.dataSource = this;
         }
@@ -59,7 +78,7 @@ namespace Tacticsoft.Examples
                 cell.onCellHeightChanged.AddListener(OnCellHeightChanged);
             }
 
-            cell.rowNumber = row;
+            cell.rowNumber = row+1;
             if(m_numRows == 0){
                 if(this.memoriaArray.Count > 0){
                     cell.acertos = this.memoriaArray[row].pontosAcertos;
@@ -122,6 +141,11 @@ namespace Tacticsoft.Examples
                     for (int i = 1; i < acertosArray.Length; i++){
                         memoriaArray.Add(new Memoria(acertosArray[i],errosArray[i],totalArray[i]));
                     }
+                    memoriaArray.Sort(delegate(Memoria x, Memoria y) {
+                        if (x.pontosTotal == null && y.pontosTotal == null  || x.pontosTotal == y.pontosTotal) return 0;
+                        else if(Int32.Parse(y.pontosTotal) < Int32.Parse(x.pontosTotal)) return -1;
+                        else return 1;
+                    });
                     m_tableView.ReloadData();
                 }
             }
@@ -139,6 +163,11 @@ namespace Tacticsoft.Examples
                     for (int i = 1; i < acertosArray.Length; i++){
                         aprendizagemArray.Add(new Aprendizagem(acertosArray[i],errosArray[i],totalArray[i]));
                     }
+                    aprendizagemArray.Sort(delegate(Aprendizagem x, Aprendizagem y) {
+                        if (x.pontosTotal == null && y.pontosTotal == null  || x.pontosTotal == y.pontosTotal) return 0;
+                        else if(Int32.Parse(y.pontosTotal) < Int32.Parse(x.pontosTotal)) return -1;
+                        else return 1;
+                    });
                     m_tableView.ReloadData();
                 }
             }
@@ -156,6 +185,11 @@ namespace Tacticsoft.Examples
                     for (int i = 1; i < acertosArray.Length; i++){
                         atencaoArray.Add(new Atencao(acertosArray[i],errosArray[i],totalArray[i]));
                     }
+                    atencaoArray.Sort(delegate(Atencao x, Atencao y) {
+                        if (x.pontosTotal == null && y.pontosTotal == null  || x.pontosTotal == y.pontosTotal) return 0;
+                        else if(Int32.Parse(y.pontosTotal) < Int32.Parse(x.pontosTotal)) return -1;
+                        else return 1;
+                    });
                     m_tableView.ReloadData();
                 }
             }
@@ -164,6 +198,5 @@ namespace Tacticsoft.Examples
                 SceneManager.LoadScene ("TelaPrincipal", LoadSceneMode.Single);
             }
         }
-
     }
 }

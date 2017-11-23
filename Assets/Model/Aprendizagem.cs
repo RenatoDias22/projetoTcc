@@ -1,4 +1,8 @@
-public class Aprendizagem {
+
+using System;
+using System.Collections.Generic;
+
+public class Aprendizagem : IComparable<Aprendizagem> {
 
     public string pontosAcertos;
 	public string pontosErro;
@@ -14,5 +18,13 @@ public class Aprendizagem {
         this.pontosAcertos = acerto;
         this.pontosErro = erros;
         this.pontosTotal = total;
+    }
+ 
+    public int CompareTo(Aprendizagem comparePart) {
+        if (comparePart == null){
+            return 1;
+        } else { 
+            return this.pontosTotal.CompareTo(comparePart.pontosTotal);
+        }
     }
 }

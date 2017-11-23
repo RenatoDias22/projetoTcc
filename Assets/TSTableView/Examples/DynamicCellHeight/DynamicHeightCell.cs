@@ -13,6 +13,7 @@ namespace Tacticsoft.Examples
         public Text m_rowNumberAcertos;
         public Text m_rowNumberErros;
         public Text m_rowNumberPontuacao;
+        public Text m_rowNumber;
         public Slider m_cellHeightSlider;
 
         public string acertos { get; set; }
@@ -28,6 +29,7 @@ namespace Tacticsoft.Examples
             m_rowNumberAcertos.text = acertos;//"Acertos " + rowNumber.ToString();
             m_rowNumberErros.text = erros;//"Erros " + rowNumber.ToString();
             m_rowNumberPontuacao.text = total;//"Pontuação " + rowNumber.ToString();
+            m_rowNumber.text = rowNumber.ToString();
         }
 
         public void SliderValueChanged(float value) {

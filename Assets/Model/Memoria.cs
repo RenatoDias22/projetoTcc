@@ -1,4 +1,7 @@
-public class Memoria {
+using System;
+using System.Collections.Generic;
+
+public class Memoria : IComparable<Memoria> {
 
     public string pontosAcertos;
 	public string pontosErro;
@@ -14,5 +17,14 @@ public class Memoria {
         this.pontosAcertos = acerto;
         this.pontosErro = erros;
         this.pontosTotal = total;
+    }
+
+
+    public int CompareTo(Memoria comparePart) {
+        if (comparePart == null) {
+            return 1;
+        } else {
+            return this.pontosTotal.CompareTo(comparePart.pontosTotal);
+        }
     }
 }
